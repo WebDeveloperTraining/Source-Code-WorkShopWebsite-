@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$.ajax({
+		type:'POST',
+		url:'Home',
+		success:function(result){
+			$('#user-name').text(result.Name.trim());
+		}
+	})
+})
